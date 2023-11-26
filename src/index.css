@@ -1,13 +1,79 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  color: black;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  width: 100%;
+}
+#root > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+.header {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #a1ba89;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+input {
+  padding: 0.6rem;
+  border: 0;
+  outline: 0;
+}
+button {
+  border: 0;
+  padding-inline: 1rem;
+  background-color: #382633;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.container div img:hover {
+  transform: scale(1.1);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+.movie-name {
+  color: #a1ba89;
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #a1ba89;
 }
